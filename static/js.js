@@ -78,8 +78,8 @@ document.getElementById('cadastro-form')?.addEventListener('submit', async (e) =
 });
 
 async function buscarSalas() {
-  let resp = await fetch(`${baseURL}/salas`, {method: 'GET'});
-  let data = await resp.json();
+  const resp = await fetch(`${baseURL}/salas`, {method: 'GET'});
+  const data = await resp.json();
   return data
 }
 
